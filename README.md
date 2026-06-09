@@ -1,83 +1,75 @@
-# KQuickCharts
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# kquickcharts
 
-A QtQuick module providing high-performance charts.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/kquickcharts)
 
-## Introduction
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-The Quick Charts module provides a set of charts that can be used from QtQuick
-applications. They are intended to be used for both simple display of data as
-well as continuous display of high-volume data (often referred to as plotters).
-The charts use a system called distance fields for their accelerated rendering,
-which provides ways of using the GPU for rendering 2D shapes without loss of
-quality.
+## Architecture
 
-### Usage Example
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-The following piece of code will render a simple line chart containing three
-lines:
+## Install
 
-\snippet snippets/minimal.qml example
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-## Concepts
+```bash
+git clone https://github.com/Interested-Deving-1896/kquickcharts.git
+cd kquickcharts
+```
 
-There are three main concepts to consider when using this module: charts, data
-sources and decorations.
+## Usage
 
-### Charts
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-These are the main items of the module. They process data and render it in a
-certain way. Currently there are three main types of charts: pie charts, line
-charts and bar charts. All charts inherit the [Chart] class, which provides the
-most basic chart interface. On top of that is the [XYChart] base class, which
-provides an interface for charts that are based on an X/Y grid.
+## Configuration
 
-* [PieChart](\ref PieChart)
-* [LineChart](\ref LineChart)
-* [BarChart](\ref BarChart)
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-[Chart]: \ref Chart
-[XYChart]: \ref XYChart
+## CI
 
-### Data Sources
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-Data sources are objects that provide data to charts. These objects act as
-adapters to other objects, like Qt's models. All data source objects inherit
-[ChartDataSource], which represents the basic data source interface.
+## Mirror chain
 
-* [SingleValueSource](\ref SingleValueSource)
-* [ArraySource](\ref ArraySource)
-* [ModelSource](\ref ModelSource)
-* [HistoryProxySource](\ref HistoryProxySource)
-* [ColorGradientSource](\ref ColorGradientSource)
-* [ChartAxisSource](\ref ChartAxisSource)
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/kquickcharts`](https://github.com/Interested-Deving-1896/kquickcharts) and mirrored through:
 
-[ChartDataSource]: \ref ChartDataSource
+```
+Interested-Deving-1896/kquickcharts  ──►  OpenOS-Project-OSP/kquickcharts  ──►  OpenOS-Project-Ecosystem-OOC/kquickcharts
+```
 
-### Decorations
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-Decorations are items that provide extra information about a chart. These are
-things like a legend or axis labels. They usually work with multiple types of
-charts, though some may be limited to X/Y charts.
+## Contributors
 
-* [AxisLabels](\ref AxisLabels)
-* [GridLines](\ref GridLines)
-* [LegendModel](\ref LegendModel)
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-## Controls
+## Origins
 
-A submodule is provided that contains pre-made controls that are provided as a
-convenience layer. These controls may be more restrictive in their data sources
-or how they display things. They are composed of Charts items along with some
-QtQuick Controls items. Some of the controls may use style-specific theming.
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-* [Legend](\ref org::kde::quickcharts::controls::Legend)
-* [LegendDelegate](\ref org::kde::quickcharts::controls::LegendDelegate)
-* [LineChartControl](\ref org::kde::quickcharts::controls::LineChartControl)
-* [PieChartControl](\ref org::kde::quickcharts::controls::PieChartControl)
+## Resources
 
-## Supporting Code
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-There are a number of classes and other pieces of code that are not considered
-public API and thus not part of the public API documentation. Primarily, these
-are all the QtQuick Scene Graph related classes located in `src/scenegraph/`,
-in addition to the shaders that are used for rendering charts.
+## License
+
+<!-- AI:start:license -->
+<!-- License not detected — add a LICENSE file to this repo. -->
+<!-- AI:end:license -->
